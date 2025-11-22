@@ -1,4 +1,4 @@
-my_name = input ("Ваше имя:")
+my_name = "Дмитрий"
 print ("Привет, " + my_name + ", как дела ?")
 
 
