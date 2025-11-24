@@ -1,7 +1,7 @@
 num = input ("Введите число: ")
-numb = int (num) + 1
+numb = int (num)
 i = 1
-for i in range(1, numb) :
+for i in range(1, numb + 1) :
     if (i % 3 == 0) and (i % 5 == 0):
         print("FizzBuzz")
     elif (i % 3 == 0):
