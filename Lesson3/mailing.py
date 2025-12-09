@@ -1,0 +1,14 @@
+class Mailing:
+    to_address = 'unknown'
+    from_address = 'unknown'
+    cost = 0.00
+    track = 'unknown'
+
+    def __init__(self, to_address, from_address, cost, track):
+        self.to_address = to_address
+        self.from_address = from_address
+        self.cost = cost
+        self.track = track
+
+    def __str__(self):
+        return f'Отправление {self.track} из {self.from_address} в {self.to_address}. Стоимость {self.cost} рублей'
