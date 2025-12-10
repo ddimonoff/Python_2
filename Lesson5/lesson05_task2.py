@@ -7,7 +7,6 @@ from selenium.webdriver.common.by import By
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 driver.get("http://uitestingplayground.com/dynamicid")
 sleep(2)
-
 blue_button = driver.find_element(By.CSS_SELECTOR, "button.btn-primary")
 blue_button.click()
 sleep(5)
