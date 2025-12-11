@@ -8,6 +8,6 @@ driver.get("https://bonigarcia.dev/selenium-webdriver-java/loading-images.html")
 driver.implicitly_wait(20)
 picture = ""
 picture = driver.find_element(By.CSS_SELECTOR, "#award").get_attribute("src")
-print(picture)
 
+print(picture)
 driver.quit()

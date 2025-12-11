@@ -11,6 +11,5 @@ driver.implicitly_wait(17)
 
 content = driver.find_element(By.CSS_SELECTOR, "#content")
 txt = content.find_element(By.CSS_SELECTOR, "p.bg-success").text
-
 print(txt)
 driver.quit()
