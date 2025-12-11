@@ -10,5 +10,6 @@ search_input = driver.find_element(By.CSS_SELECTOR, text_button)
 search_input.send_keys("SkyPro")
 driver.find_element(By.CSS_SELECTOR, "#updatingButton").click()
 txt=driver.find_element(By.CSS_SELECTOR, "#updatingButton").text
+
 print(txt)
 driver.quit()
