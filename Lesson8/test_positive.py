@@ -45,6 +45,7 @@ def test_positive_yougile():
     len_finished = pospage.get_projects_list(my_headers)
     assert len_finished == len_before
 
+
     # print("")
     # print("Проектов было :", len_before)
     # print("Проектов стало :", len_after)

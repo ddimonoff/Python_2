@@ -18,7 +18,6 @@ class PosPage:
         body = resp.json()["id"]
         return body
 
-
     def get_project(self, my_headers, project_id):
         resp = requests.get(self.base_url + "/projects/" + project_id, headers=my_headers)
         body = resp.json()["title"]

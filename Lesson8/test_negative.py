@@ -10,6 +10,7 @@ project_id = "3ea2b983-164b-4a83-9ec8-09f3d939b99"
 
 
 def test_negative_yougile():
+
     negpage = NegPage(base_url)
 
     # некорректный Bearer при запросе списка проектов

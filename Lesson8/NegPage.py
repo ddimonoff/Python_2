@@ -35,4 +35,3 @@ class NegPage:
     def get_project(self, project_id, my_headers):
         resp = requests.get(self.base_url + "/projects/" + project_id, headers=my_headers)
         assert resp.status_code == 404
-
