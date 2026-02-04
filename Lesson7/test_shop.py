@@ -1,12 +1,19 @@
+import allure
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.firefox import GeckoDriverManager
-from Lesson7.pages2.AutorizePage import Autorize
-from Lesson7.pages2.ProductsPage import Products
-from Lesson7.pages2.BasketPage import Basket
-from Lesson7.pages2.PurchaseOrderPage import PurchaseOrder
+from pages2.AutorizePage import Autorize
+from pages2.ProductsPage import Products
+from pages2.BasketPage import Basket
+from pages2.PurchaseOrderPage import PurchaseOrder
 
 
+@allure.title("Он-лайн магазин")
+@allure.severity("blocker")
+@allure.epic("Магазин")
+@allure.feature("CREATE")
+@allure.description("Тест проверяет корректность "
+                    "создания заказа в он-лайн магазине")
 def test_shop():
     brauser = webdriver.Firefox(
         service=FirefoxService(GeckoDriverManager().install())
